@@ -388,7 +388,7 @@
     text-align: right;
   }
   
-  .banner-img{
+ .banner-img{
     width: 100%;
   }
   
@@ -573,9 +573,9 @@
   }
   
   .navbar.fixed{
-    z-index: 1000;
+    z-index: 996;
     opacity: 1;
-    transform: translateY(0); 
+    
     position: fixed;
     top: 0;
     display: flex;
@@ -590,15 +590,6 @@
    
   }
   
-  .header-img.top{
-    margin: 0px auto;
-   margin-top: 7.875rem;
-    max-width: 100rem;
-    position: relative;
-    display: flex;
-    justify-content: right;
-    text-align: right;
-  }
 
 
 

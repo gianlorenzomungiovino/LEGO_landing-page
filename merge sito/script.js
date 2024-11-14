@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 let lastScrollPosition = 0;
 const navbar = document.querySelector('.navbar');
-const triggerHeight = 7.875 * 16; 
+const triggerHeight = 120; 
 
 window.addEventListener('scroll', () => {
     const currentScrollPosition = window.scrollY;
