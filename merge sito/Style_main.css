@@ -874,3 +874,532 @@
   .wishlist-icon:hover {
     transform: scale(1.1);
   }
+
+  /* cosa stanno comprando gli altri */
+  .wtb-section{
+    position: relative;
+    margin: 0 10rem;
+    
+  }
+  
+  .wtb-carosello{
+    gap: 20px;
+    display: flex;   
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
+    position: relative;
+    max-width: 200rem;
+    margin: 0 auto;
+  }
+  
+  .move-btn{
+    border: none;
+    background-color: var(--spotlight-bgcolor);
+    margin-left: 1px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+    border-collapse: collapse;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+  }
+  .left{
+    position: absolute;
+    top: 50%;
+    width: 3%; 
+    transform: rotate(180deg);
+       
+  }
+  
+  .right{
+    position: absolute;
+    right: -0px; 
+    top: 50%;
+    width: 3%;
+    margin-right: 1px;         
+  }
+  
+  .card-wtb{
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .card-wtb-img{
+    display: flex;
+    width: 18.23rem;
+    height: 18.23rem;
+    overflow: hidden;
+  }
+  
+  
+  .card-wtb-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    transition: transform 0.3s ease;
+  }
+  .card-wtb-img>img:hover{
+    transform: scale(1.1);
+  }
+  .card-wtb-explained{
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 1.25rem 1.25rem;
+  }
+  
+  .card-wtb-link{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    min-height: 3.75rem;
+  
+  
+  }
+  
+  .card-wtb-rating{
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    cursor: pointer;
+    
+    
+  }
+  
+  .card-wtb-rating img{
+    width: 15px;
+    height: 15px;
+  }
+  
+  .card-wtb-price{
+    letter-spacing: 0;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  .card-wtb-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    border: 2px solid #E96F14;
+    cursor: pointer;
+    background-color: var(--add-cart-bgcolor);
+    color: var(--black-button-text-color);
+    padding: var(--button-padding-big);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  
+  .card-wtb-button:hover{
+    background-color: rgba(255, 255, 255, 0);
+  }
+
+  /* end cosa stanno comprando gli altri */
+
+  /* sezione lego Dreamzz */
+  .d-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--button-border-radius-heavy);
+    cursor: pointer;
+    background-color: var(--promo-bgcolor);
+    color: var(--black-button-text-color);
+    padding: var(--button-padding-mid);
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    line-height: 1.5625rem;
+    letter-spacing: normal;
+    max-width:fit-content;
+    margin-top: 1.25rem;
+  }   
+  .d-btn:hover{
+    background-color: var(--promo-bgcolor-hover);
+    color: #FFFFFF;
+  }
+  .d-btn svg{
+    height: 16px;
+    width: 16px;
+    margin-left: 12px;
+  }
+  
+  .dream-head{
+    display: flex;
+    justify-content: center;
+  }
+  .dhead-bg,
+  .dfoot-bg{
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .dhead-bg img,
+  .dfoot-bg img{
+    object-fit: cover;
+  }
+  
+  .dhead-banner{
+    position: absolute;
+    top: 10%; 
+    width:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1; 
+    padding: 1rem;
+  }
+  
+  .dhead-mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+  }
+  
+  .dhead-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 0.635rem;
+    padding: 1rem;
+  }
+  
+  .d-logo {
+    max-height: 3.125rem;
+    max-width: 9.375rem;
+    margin-bottom: 0.9375rem;
+  }
+  
+  .d-logo img{
+    max-width: inherit;
+    
+  }
+  
+  .dream h2{
+    font-size: 2rem;
+    font-weight: var(--font-weight-normal);
+    color: white;
+    line-height: 3.125rem;
+    text-align: center;
+  }
+  .dream span{
+    font-size: var(--font-size-title-2);
+    color: white;
+    margin-top: 0.9375rem
+  }
+  
+  /* start carosello cards */
+  .card-carosello{
+      background-color: #00A3DA;
+    padding: 70px;
+      position: relative;
+      max-width: 100rem;
+      margin: 0 auto;
+  }
+  .titoli{
+      display: flex;
+     align-items: center;
+  }
+  .titoli h2{
+    color: var(--explore-bgcolor);
+  }
+  .titoli a{
+  color: black;
+  margin: 20px;
+  }
+  
+  .titoli img{
+      line-height: 0;
+      height: 12px;
+      margin-left: 0.3125rem
+  }
+  
+  /* cards */
+  
+  /* freccia sinistra */
+  .movimentoSinistro{
+    background-color: #007BFF;
+    margin-left: 1px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+    border-collapse: collapse;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+    transform: rotate(180deg)
+  ;}
+  
+  .sinistro{
+   position: absolute;
+   top: 50%;
+      width: 3%;
+     
+      
+  }
+  /* end freccia sinistra */
+  /* freccia destra */
+  .movimentoDestro{
+    background-color: #007BFF;
+    margin-left: 1px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 50%;
+    border-collapse: collapse;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .destro{
+    position: absolute;
+      right: -0px; 
+      top: 50%;
+      width: 3%;
+      margin-right: 1px;
+      
+    
+  }
+  /* end freccia destra */
+  
+  /* scrollbar settings */
+  .card::-webkit-scrollbar {
+    height: 8px; 
+  }
+  
+  .card::-webkit-scrollbar-thumb {
+    background-color: var(--dreamz-bgcolor-hover); 
+  }
+  
+  .card::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /
+  }
+  
+  .card::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+    
+  }
+  /* end scrollbar settings */
+  .card{
+     position: relative;
+     gap: 40px;
+     display: flex;
+     padding: 1.875rem  0px;
+     overflow-x: auto;
+    
+      }
+  
+  .conteiner{
+    display: flex;
+    flex-direction: column;
+     width:25%;
+  }
+  
+    .conteiner-img{
+      background-color: var(--promo-bgcolor);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      object-fit: cover;
+     height: auto;
+    }
+    .conteiner-img a img:nth-of-type(2){
+    width: 100%;
+      object-fit: cover;
+     height: 100%;
+  
+    }
+    .conteiner-img:hover img {
+      transform: scale(1.05);
+    }
+    .wishlist-conteiner{
+      display: flex;
+      align-items: center;
+      font-size: var(--font-size-smaller);
+      font-weight: var(--font-weight-heavy);
+      border-radius: 0.9375rem;
+      padding: 0 0.3125rem;
+      width: 100%;
+      
+    }
+    .wishlist-conteiner a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.3s;
+      max-width: 80%;
+    }
+    
+    .wishlist-conteiner img {
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      
+    }
+    
+    .wishlist-conteiner img:hover {
+      transform: scale(1.1);
+    }
+    .badge-conteiner {
+      position: relative;
+      bottom: 16px;
+      left: 16px;
+      color: #333;
+      padding: 10px 0 0 0;
+      font-size: var(--font-size-small);
+    }
+    .badge-conteiner span{
+      background-color: var(--nav-bg-color);
+      padding: 4px 8px;
+      font-size: var(--font-size-base);
+    }
+    .badge-conteiner span:nth-child(2){
+      background-color: red;
+      font-weight: var(--font-weight-heavy);
+      color: white;
+    }
+   
+    .conteiner-bottom{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 0.75rem 1.25rem 1.25rem;
+      background-color: var(--dreamz-bgcolor-hover);
+    }
+    .conteiner-bottom a {
+      color: var(--promo-bgcolor);
+      cursor: pointer;
+      text-decoration: none;   
+      
+    }
+    .conteiner-bottom a:hover {
+      text-decoration: underline;
+    }
+    .conteiner-bottom a h3 span{
+     color: var(--add-cart-bgcolor-hover);
+      line-height: 1.5625rem;
+      font-weight: bold;
+      text-transform: inherit;
+      font-size: var(--font-size-base);
+      
+    }
+    
+    .price-conteiner{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: flex-start;
+      color: var(--promo-bgcolor);
+      width: 100%;
+      min-height: 1.5625rem;
+      
+    }
+    .price-conteiner span {
+      font-size: 1.3rem;
+      font-weight: 700
+    }
+  .price-conteiner span:nth-child(2){
+    color: red;
+  }
+   
+  button{
+      border-radius: var(--button-border-radius-heavy);
+      border: 2px solid #00A3DA;
+      cursor: pointer;
+      background-color: var(--dream-bg-color);
+      color: var(--black-button-text-color);
+      padding: var(--button-padding-big);
+      font-size: var(--font-size-base);
+      font-weight: var(--font-weight-heavy);
+      line-height: 1.5625rem;
+      border-collapse: collapse;
+      box-sizing: border-box;
+      width: 100%;
+      margin-top: auto;
+  }
+  
+  button:hover{
+      background-color: var(--dreamz-bgcolor-hover);
+    color: var(--add-cart-bgcolor-hover);
+    border: 2px solid var(--dream-bg-color);
+  }
+  
+  .scontato{
+      text-decoration: line-through;
+      margin-right: 1px;
+  }
+  
+  .stellette{
+          display: flex;
+      align-items: center;
+      box-sizing: inherit;
+      height: 15px;
+      width: 15px;
+          margin-bottom: 0.3125rem;
+  }
+  
+  
+  /* end carosello card*/
+  
+  
+  .dream-foot {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .dfoot-bg {
+    position: relative;
+    width: 100%;
+  }
+  
+  .dfoot-banner {
+    position: absolute; 
+    top: 50%; 
+    right: 8%; 
+    transform: translateY(-50%); 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding: 20px;
+    max-width: 35%;
+    text-align: right;
+  }
+  
+  .dfoot-left {
+    margin-right: 20px; 
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  /* end lego dreamzz */

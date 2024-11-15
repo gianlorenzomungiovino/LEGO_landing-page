@@ -86,3 +86,72 @@ cardCaroselloWrapper.addEventListener("scroll", function() {
     moveRightButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
 });
 // end script set in evidenza
+// cosa stanno comprando gli altri
+const wtbLeftButton = document.querySelector(".left");
+const wtbRightButton = document.querySelector(".right");
+const sliderWrapper = document.querySelector(".wtb-carosello");
+
+// Define scroll distance
+const distance = 300;
+
+// Scroll left button event
+wtbLeftButton.addEventListener("click", () => {
+    const option = {
+        left: -distance,
+        behavior: "smooth"
+    };
+    sliderWrapper.scrollBy(option);
+});
+
+// Scroll right button event
+wtbRightButton.addEventListener("click", () => {
+    const option = {
+        left: distance,
+        behavior: "smooth"
+    };
+    sliderWrapper.scrollBy(option);
+});
+
+// Scroll event to adjust button opacity
+sliderWrapper.addEventListener("scroll", () => {
+    const scrollLeft = sliderWrapper.scrollLeft;
+    const maxScrollLeft = sliderWrapper.scrollWidth - sliderWrapper.clientWidth;
+
+    // Adjust button opacity based on scroll position
+    wtbLeftButton.style.opacity = scrollLeft > 0 ? 1 : 0.5;
+    wtbRightButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
+});
+// end cosa stanno comprando glia altri
+
+// sezione lego dreamZz
+
+const movimentoSinistro = document.getElementById("movimentoSinistro");
+const moveimentoDestro = document.getElementById("movimentoDestro");
+const cardCarosello = document.querySelector(".card");
+
+function moveCards(distance) {
+    cardCarosello.scrollBy({
+        left: distance,
+        behavior: 'smooth' 
+    });
+}
+
+
+movimentoSinistro.addEventListener("click", function() {
+    moveCards(-900); 
+});
+
+moveimentoDestro.addEventListener("click", function() {
+    moveCards(900); 
+});
+
+
+cardCarosello.addEventListener("scroll", function() {
+    
+    const scrollLeft = cardCarosello.scrollLeft;
+    const maxScrollLeft = cardCarosello.scrollWidth - cardCarosello.clientWidth;
+
+    
+    movimentoSinistro.style.opacity = scrollLeft > 0 ? 1 : 0.5; 
+    moveimentoDestro.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
+});
