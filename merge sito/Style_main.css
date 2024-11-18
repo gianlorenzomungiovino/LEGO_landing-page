@@ -1096,7 +1096,7 @@
   
   .dhead-banner{
     position: absolute;
-    top: 10%; 
+    /* top: 10%;  */
     width:35%;
     display: flex;
     flex-direction: column;
@@ -1391,9 +1391,9 @@
       width: 100%;
       margin-top: auto;
   }
-  .button a{
+  /* .button a{
     
-  }
+  } */
   
   button:hover{
       background-color: var(--dreamz-bgcolor-hover);
