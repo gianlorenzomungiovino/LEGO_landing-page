@@ -55,11 +55,11 @@ window.addEventListener('scroll', () => {
 // end script Header and navbar
 
 // script set in evidenza
-const moveLeftButton = document.getElementById("move-left");
-const moveRightButton = document.getElementById("move-right");
+const moveGaucheButton = document.querySelector(".move-btn");
+const moveDroiteButton = document.querySelector(".move-btnright");
 const cardCaroselloWrapper = document.querySelector(".featured-items-container");
 
-function moveCards(distance) {
+function moveCarte(distance) {
     cardCaroselloWrapper.scrollBy({
         left: distance,
         behavior: 'smooth' 
@@ -67,12 +67,12 @@ function moveCards(distance) {
 }
 
 
-moveLeftButton.addEventListener("click", function() {
-    moveCards(-900); 
+moveGaucheButton.addEventListener("click", function() {
+    moveCarte(-900); 
 });
 
-moveRightButton.addEventListener("click", function() {
-    moveCards(900); 
+moveDroiteButton.addEventListener("click", function() {
+    moveCarte(900); 
 });
 
 
@@ -82,13 +82,13 @@ cardCaroselloWrapper.addEventListener("scroll", function() {
     const maxScrollLeft = cardCaroselloWrapper.scrollWidth - cardCaroselloWrapper.clientWidth;
 
     
-    moveLeftButton.style.opacity = scrollLeft > 0 ? 1 : 0.5; 
-    moveRightButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
+    moveGaucheButton.style.opacity = scrollLeft > 0 ? 1 : 0.5; 
+    moveDroiteButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
 });
 // end script set in evidenza
 // cosa stanno comprando gli altri
-const wtbLeftButton = document.querySelector(".left");
-const wtbRightButton = document.querySelector(".right");
+const wtbLeftButton = document.querySelector(".isquerda");
+const wtbRightButton = document.querySelector(".derecha");
 const sliderWrapper = document.querySelector(".wtb-carosello");
 
 // Define scroll distance
@@ -126,7 +126,7 @@ sliderWrapper.addEventListener("scroll", () => {
 // sezione lego dreamZz
 
 const movimentoSinistro = document.getElementById("movimentoSinistro");
-const moveimentoDestro = document.getElementById("movimentoDestro");
+const movimentoDestro = document.getElementById("movimentoDestro");
 const cardCarosello = document.querySelector(".card");
 
 function moveCards(distance) {
@@ -141,7 +141,7 @@ movimentoSinistro.addEventListener("click", function() {
     moveCards(-900); 
 });
 
-moveimentoDestro.addEventListener("click", function() {
+movimentoDestro.addEventListener("click", function() {
     moveCards(900); 
 });
 
@@ -153,5 +153,5 @@ cardCarosello.addEventListener("scroll", function() {
 
     
     movimentoSinistro.style.opacity = scrollLeft > 0 ? 1 : 0.5; 
-    moveimentoDestro.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
+    movimentoDestro.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
 });
