@@ -1881,6 +1881,9 @@
 }
 
 /* footer */
+footer ul{
+  padding: 0;
+}
 footer li {
   list-style: none;
 }
@@ -1944,6 +1947,7 @@ footer a{
   padding: 0 15px;
   color: #FFFFFF;
 }
+
 .contenitore-flex{
   display: flex;
   flex-wrap: wrap;
