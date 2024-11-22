@@ -2062,3 +2062,23 @@ footer a{
   margin-bottom: 1.25rem;
   margin-top: 0px;
 }
+
+.banner-img-mobile{
+  display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar-bottom-left ul{
+    display: none;
+  }
+  .btn.holiday{
+    display: none;
+  }
+  .banner-img{
+    display: none;
+  }
+  .banner-img-mobile{
+    display: block;
+    width: 390px;
+  }
+}
