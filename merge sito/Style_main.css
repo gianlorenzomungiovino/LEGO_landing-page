@@ -2066,8 +2066,72 @@ footer a{
 .banner-img-mobile{
   display: none;
 }
+.remove-x{
+  display: none;
+}
 
 @media screen and (max-width: 400px) {
+
+  .btn.area-giochi{
+    display: none;
+  }
+  
+  .aside-icons{
+    display: none;
+  }
+  
+  .navbar-top{
+    padding-right: 15px;
+    padding-left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .aside-carosello{
+    width: 90%;
+    
+  
+
+  }
+
+  .content {
+    margin: 0 2rem;
+  }
+
+  
+  .remove-x{
+    display: flex;
+  
+  }
+  .remove-x svg{
+    width: 17px;
+    height: 17px;
+    margin-left: 6px;
+  }
+  .item p a{
+    margin-left: 10px;
+  }
+  .arrows {
+    top: 25%;
+    width: 100%;
+  }
+
+  .item p,
+  .item a {
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.1rem;
+    box-sizing: border-box;
+    font-weight: 400;
+  }
+
+
+
+
+
+
   .navbar-bottom-left ul{
     display: none;
   }
