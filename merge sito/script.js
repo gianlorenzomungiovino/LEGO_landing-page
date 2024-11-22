@@ -1,5 +1,3 @@
-
-
 // /Sezione della lente
 document.addEventListener("DOMContentLoaded", function () {
   const lente = document.querySelector(".lente");
@@ -79,33 +77,32 @@ window.addEventListener("scroll", () => {
 // script set in evidenza
 const moveGaucheButton = document.querySelector(".move-btn");
 const moveDroiteButton = document.querySelector(".move-btnright");
-const cardCaroselloWrapper = document.querySelector(".featured-items-container");
+const cardCaroselloWrapper = document.querySelector(
+  ".featured-items-container"
+);
 
 function moveCarte(distance) {
-    cardCaroselloWrapper.scrollBy({
-        left: distance,
-        behavior: 'smooth' 
-    });
+  cardCaroselloWrapper.scrollBy({
+    left: distance,
+    behavior: "smooth",
+  });
 }
 
-
-moveGaucheButton.addEventListener("click", function() {
-    moveCarte(-900); 
+moveGaucheButton.addEventListener("click", function () {
+  moveCarte(-900);
 });
 
-moveDroiteButton.addEventListener("click", function() {
-    moveCarte(900); 
+moveDroiteButton.addEventListener("click", function () {
+  moveCarte(900);
 });
 
+cardCaroselloWrapper.addEventListener("scroll", function () {
+  const scrollLeft = cardCaroselloWrapper.scrollLeft;
+  const maxScrollLeft =
+    cardCaroselloWrapper.scrollWidth - cardCaroselloWrapper.clientWidth;
 
-cardCaroselloWrapper.addEventListener("scroll", function() {
-    
-    const scrollLeft = cardCaroselloWrapper.scrollLeft;
-    const maxScrollLeft = cardCaroselloWrapper.scrollWidth - cardCaroselloWrapper.clientWidth;
-
-    
-    moveGaucheButton.style.opacity = scrollLeft > 0 ? 1 : 0.5; 
-    moveDroiteButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
+  moveGaucheButton.style.opacity = scrollLeft > 0 ? 1 : 0.5;
+  moveDroiteButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
 });
 // end script set in evidenza
 // cosa stanno comprando gli altri
@@ -118,30 +115,30 @@ const distance = 300;
 
 // Scroll left button event
 wtbLeftButton.addEventListener("click", () => {
-    const option = {
-        left: -distance,
-        behavior: "smooth"
-    };
-    sliderWrapper.scrollBy(option);
+  const option = {
+    left: -distance,
+    behavior: "smooth",
+  };
+  sliderWrapper.scrollBy(option);
 });
 
 // Scroll right button event
 wtbRightButton.addEventListener("click", () => {
-    const option = {
-        left: distance,
-        behavior: "smooth"
-    };
-    sliderWrapper.scrollBy(option);
+  const option = {
+    left: distance,
+    behavior: "smooth",
+  };
+  sliderWrapper.scrollBy(option);
 });
 
 // Scroll event to adjust button opacity
 sliderWrapper.addEventListener("scroll", () => {
-    const scrollLeft = sliderWrapper.scrollLeft;
-    const maxScrollLeft = sliderWrapper.scrollWidth - sliderWrapper.clientWidth;
+  const scrollLeft = sliderWrapper.scrollLeft;
+  const maxScrollLeft = sliderWrapper.scrollWidth - sliderWrapper.clientWidth;
 
-    // Adjust button opacity based on scroll position
-    wtbLeftButton.style.opacity = scrollLeft > 0 ? 1 : 0.5;
-    wtbRightButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
+  // Adjust button opacity based on scroll position
+  wtbLeftButton.style.opacity = scrollLeft > 0 ? 1 : 0.5;
+  wtbRightButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
 });
 // end cosa stanno comprando glia altri
 
@@ -152,28 +149,32 @@ const movimentoDestro = document.getElementById("movimentoDestro");
 const cardCarosello = document.querySelector(".card");
 
 function moveCards(distance) {
-    cardCarosello.scrollBy({
-        left: distance,
-        behavior: 'smooth' 
-    });
+  cardCarosello.scrollBy({
+    left: distance,
+    behavior: "smooth",
+  });
 }
 
-
-movimentoSinistro.addEventListener("click", function() {
-    moveCards(-900); 
+movimentoSinistro.addEventListener("click", function () {
+  moveCards(-900);
 });
 
-movimentoDestro.addEventListener("click", function() {
-    moveCards(900); 
+movimentoDestro.addEventListener("click", function () {
+  moveCards(900);
 });
 
+cardCarosello.addEventListener("scroll", function () {
+  const scrollLeft = cardCarosello.scrollLeft;
+  const maxScrollLeft = cardCarosello.scrollWidth - cardCarosello.clientWidth;
 
-cardCarosello.addEventListener("scroll", function() {
-    
-    const scrollLeft = cardCarosello.scrollLeft;
-    const maxScrollLeft = cardCarosello.scrollWidth - cardCarosello.clientWidth;
+  movimentoSinistro.style.opacity = scrollLeft > 0 ? 1 : 0.5;
+  movimentoDestro.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
+});
 
-    
-    movimentoSinistro.style.opacity = scrollLeft > 0 ? 1 : 0.5; 
-    movimentoDestro.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5; 
+const navbarTop = document.querySelector(".navbar-top");
+const removeX = document.querySelector(".remove-x");
+
+removeX.addEventListener("click", (event) => {
+  navbarTop.style.display = "none";
+  event.preventDefault();
 });
