@@ -1,4 +1,9 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary);
+}
   
   :root{
     --nav-bg-color: #FFD502; 
@@ -45,17 +50,13 @@
     --button-padding-big: 15px;
     --button-padding-allArticles: 8px 16px;
   }
-  *{
-    box-sizing: border-box;
-    font-family: var(--font-family-primary);
-   
-   
-  }
-  body{
+
+  section{
     margin: 0 auto;
     max-width: 100rem;
    padding: 0px;
   }
+
   .img-logo{
     height: 55px;
     width: 55px;
@@ -509,10 +510,12 @@
   }
   
   .icons a {
+    color: initial;
     text-decoration: none;
   }
   
   .icons a:hover {
+    color: initial;
     text-decoration: underline;
   }
   
@@ -1726,7 +1729,12 @@
   height: 100%;
 }
 
+#btn-in-evidenza-bianco{
+  color: white;
+}
+
 .btn-in-evidenza a {
+  color: initial;
   text-decoration: none;
   font-weight: bold;
 }
