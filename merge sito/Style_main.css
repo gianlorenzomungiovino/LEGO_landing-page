@@ -653,7 +653,7 @@
     display: flex;
     flex-direction: row;
     font-family: var(--font-family-primary);
-    font-size:var(--font-size-title-3) ;
+    font-size: 800 ;
     margin-bottom: 20px;
     
   }
@@ -684,10 +684,10 @@
   .testo-preferiti {
     display: flex;
     flex-direction: column;
-    /* padding-top: 1.25rem; */
+    padding-top: 1.25rem;
     align-items: center;
   text-align: center;
-  gap:5px;
+  gap:15px;
   font-size: var(--font-size-small);
   }
   
@@ -822,7 +822,6 @@
   .slide {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     gap: 1rem;
     
   }
@@ -978,7 +977,7 @@
   }
   .wtb-section{
     position: relative;
-    margin: 0 10rem;
+    margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
     
@@ -1050,6 +1049,7 @@
     width: 18.23rem;
     height: 18.23rem;
     overflow: hidden;
+    border: 0.1rem solid rgb(190, 187, 187);
   }
   
   
@@ -2084,7 +2084,9 @@ gap: 2px;
 }
 
 @media screen and (max-width: 400px) {
-
+body{
+  margin: 0;
+}
   .btn.area-giochi{
     display: none;
   }
@@ -2244,6 +2246,124 @@ fill: none;
     
   }
 
+/* i preferiti di questa settimana */
+.preferiti{
+  display: flex;
+  padding: 1.25rem;
 
+
+}
+.conteiner-content-preferiti{
+  overflow-x: auto;
+  width: 95%; 
+  height: 502px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  
+}
+
+.card-preferiti{
+   box-sizing: content-box;
+   flex-shrink: 0;
+   max-width: 100%; 
+}
+.conteiner-preferiti{
+  margin: 0;
+  
+}
+.compra-ora span{
+  font-size: var(--font-size-small);
+}
+
+
+.titolo-preferiti {
+  position: relative;
+top: 12%;
+}
+
+.titolo-preferiti h2{
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.testo-preferiti{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 0.9375rem;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-size: 0.875rem;
+  gap: 15px;
+}
+
+
+/* end i preferiti di questa settimana*/
+/* set in evidenza */
+
+
+.set-in-evidenza {
+  margin: 0;
+}
+.product-card{
+min-width: 270px;
+}
+.slider-header h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+.product-details h3{
+  font-size: 1rem;
+}
+.price{
+  font-size: 1rem;
+}
+.badge-conteiner span{
+  font-size: 0.8rem;
+}
+.move-btnright{
+  display: none;
+}
+.move-btn{
+  display: none;
+}
+
+/* cosa stanno comprando gli altri */
+.card-wtb-img{
+margin-top: 5px;
+}
+.wtb-section h2{
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-left: 2px;
+  margin-bottom: 8px;
+}
+.card-wtb-link{
+min-height: 1.2rem;
+}
+
+
+/* scrollbar lego dreamz */
+.conteiner{
+  width:100%;
+}
+.card-carosello{
+  padding: 20px;
+}
+.titoli h2{
+  font-size: 1.5rem;
+  display: flex;
+  text-align: left;
+}
+.titoli a{
+  font-size: 0.rem;
+ display: inline-block;
+}
+.titoli img{
+ 
+display: none;
+}
+.moveimentoDestro, .movimentoSinistro  {
+  display: none;
+}
 
 }
