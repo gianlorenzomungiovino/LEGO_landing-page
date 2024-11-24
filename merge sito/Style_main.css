@@ -1154,6 +1154,10 @@
   .dream-head{
     display: flex;
     justify-content: center;
+   
+  }
+  .dhead-mid-mobile{
+    display: none;
   }
   .dhead-bg,
   .dfoot-bg{
@@ -1200,6 +1204,10 @@
     max-height: 3.125rem;
     max-width: 9.375rem;
     margin-bottom: 0.9375rem;
+  }
+
+  .d-logo-mobile{
+    display: none;
   }
   
   .d-logo img{
@@ -2423,6 +2431,79 @@ min-height: 1.2rem;
 
 
 /* scrollbar lego dreamz */
+.d-logo-mobile{
+  display: block;
+  width: 390px;
+  height: 390px;
+}
+.d-logo{
+ display: none;
+}
+.d-logo-mobile{
+  display: block;
+}
+.d-logo-mobile img:nth-child(2){
+  position: relative;
+  left: 60%;
+  bottom: 15%;
+}
+.dhead-mid{
+  display: none;
+ 
+  
+}
+.dhead-mid-mobile{
+  background-color: var(--dreamz-bgcolor-hover);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 1.875rem;text-align: center;
+}
+.dhead-bg{
+  display: none;
+}
+.dhead-mid-mobile h2{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.dhead-mid-mobile span{
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+}
+.dhead-buttons-mobile{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.dhead-banner{
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  align-items: center;
+text-align: center;
+}
+.dhead-banner span{
+  
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  
+}
+.dhead-mid h2{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.dhead-buttons{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5px;
+}
+
 .conteiner{
   width:100%;
 }
@@ -2437,8 +2518,8 @@ min-height: 1.2rem;
   text-align: left;
 }
 .titoli a{
-  font-size: 0rem;
- display: inline-block;
+ display: flex;
+ 
 }
 #image-dreamz{
   width: 280px;
