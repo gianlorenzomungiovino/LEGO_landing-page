@@ -9,6 +9,60 @@
     <link rel="icon" href="/assets-lego/navbar/Lego-logo.jpg" type="image/x-icon">
 </head>
 <body>
+          <!-- hamburger menu -->
+          <div class="hm-menu-container">
+            <div class="hm-menu-top">
+              <div id="hm-menu-title"><span>MENU</span></div>        
+              <div id="x-close"><img src="/assets-lego/svg/x-close.svg" alt=""></div>
+            </div>
+            <hr id="yellow-line">
+            <div class="hm-menu-scroll">
+              <div class="hm-menu-scroll-bt">
+                <div id="hm-bt-area-giochi">
+                  <a class="btn area-giochi">
+                  <svg width="37" height="16" viewBox="0 0 37 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-sc-lm07h6-0 gdiMlP UtilityBarstyles__KidsIcon-sc-1uwh8t8-2 fZmJyP"><path fill="currentColor" d="M29.493.597l.095.084 6.535 6.54a1 1 0 01.083 1.319l-.083.094-6.535 6.54a1 1 0 01-1.498-1.32l.083-.094 4.83-4.834-31.908.001A1 1 0 01.98 6.934l.116-.007h31.907l-4.83-4.833a1 1 0 01-.082-1.32l.083-.094a1 1 0 011.32-.083z"></path></svg>
+                  AREA GIOCHI
+                  </a>
+                </div>
+              </div>
+              <ul>
+                <li>
+                  <div id="hm-btn-holiday">
+                    <a class="btn holiday">
+                      HOLIDAY
+                      </a>
+                  </div>
+                </li>
+                <li>
+                  <div><a href="">HOME</a></div>
+                </li>
+                <li>
+                  <div class="hm-menu-scroll-row"><a href="">ACQUISTA</a><img class="svg-right" src="/merge sito/assets-lego/svg/frecce-link-slide.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="hm-menu-scroll-row"><a href="">SCOPRI</a><img class="svg-right" src="/merge sito/assets-lego/svg/frecce-link-slide.svg" alt=""></div>
+                </li>
+                <li>
+                  <div class="hm-menu-scroll-row"><a href="">AIUTO</a><img class="svg-right" src="/merge sito/assets-lego/svg/frecce-link-slide.svg" alt=""></div>
+                </li>
+                <li>
+                  <div><a href=""><img class="svg-left" src="/assets-lego/svg/account.svg" alt="">Account</a></div>
+                </li>
+                <li>
+                  <div><a href=""><img class="svg-left" src="/assets-lego/svg/insidersOut.svg" alt="">Iscriviti al programma LEGO® Insiders</a></div>
+                </li>
+                <li>
+                  <div><a href="">La mia lista dei desideri</a></div>
+                </li>
+                <li>
+                  <div><a href="">Il mio carrello (0)</a></div>
+                </li>
+                <li>
+                  <div><a href=""><img class="svg-left" src="/assets-lego/svg/posizione-mappa.svg" alt="">Italia</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
     <!-- navbar -->
     <header>
         <nav class="navbar">
@@ -71,18 +125,21 @@
                     <!-- Sezione di contenuto con paragrafi e link -->
                     <div class="content">
                       <div class="item" id="item1">
-                        <p>Doppi punti sui set Lord of the Rings™ LEGO®, 24/9-30/9*</p>
-                        <a href="#">Compra ora</a>
+                        <p>Doppi punti sui set Lord of the Rings™ LEGO®, 24/9-30/9*  <span><a href="#">Compra ora</a></span></p>
+                        
                       </div>
                       <div class="item" id="item2">
-                        <p>Set LEGO® DREAMZzz™ in offerta*</p>
-                        <a href="#">Compra ora</a>
+                        <p>Set LEGO® DREAMZzz™ in offerta*  <span><a href="#">Compra ora</a></span></p>
+                        
                       </div>
                       <div class="item" id="item3">
-                        <p>Consegna GRATUITA sugli ordini superiori a 55 €!*</p>
-                        <a href="#">Scopri di più</a>
+                        <p>Consegna GRATUITA sugli ordini superiori a 55 €!*  <span><a href="#">Scopri di più</a></span></p>
+                        
                       </div>
                     </div>
+                     </div>
+                     <div class="remove-x"> <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" class="lenteuno icona-x"><path d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z" fill="currentColor" fill-rule="evenodd"></path></svg>
+                   
                   </div>
                   
                   
@@ -106,6 +163,14 @@
 
             <div class="navbar-bottom">
                 <div class="navbar-bottom-left">
+                  <div class="hamburger-menu">
+                    <div class="icon-hamburger">
+                      <span></span>
+                      <span></span>
+                      <p class="menu-hamburger-icon">MENU</p>  
+                    </div>
+                    
+                  </div>
                 <img class="img-logo" src="/assets-lego/navbar/Lego-logo.jpg" alt="">
                 <ul>
                     <li><a href="#">Acquista</a></li>
@@ -146,9 +211,11 @@
                       <!--fine barra di ricerca-->
 
 
-
-                    <li><a href="#"><img src="/assets-lego/navbar/cuore.svg" alt=""></a></li>
-                    <li><a href="#"><img src="/assets-lego/navbar/carrello.svg" alt=""></a>(0)</li>
+                    <li> <div class="account"><svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-sc-lm07h6-0 kBnuCw UtilityBarstyles__AccountIcon-sc-1uwh8t8-5 KHcEY"><g transform="translate(1 1)" fill-rule="nonzero" fill="none"><rect stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00" x="4.875" width="8.25" height="6.038" rx=".729"></rect><rect stroke="#2C2C2C" stroke-width="1.2" fill="#FFCF00" x="3.75" y="14.34" width="10.5" height="5.66" rx=".729"></rect><path d="M14.25 17.736H3.75C0 17.736 0 14.717 0 14.717v-8.68S0 3.02 3.75 3.02h10.5C18 3.019 18 6.038 18 6.038v8.679s0 3.019-3.75 3.019z" stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00"></path><path d="M7.125 8.868a.94.94 0 00-.938-.943.94.94 0 00-.937.943c0 .52.42.943.938.943a.94.94 0 00.937-.943zm4.688-.943a.94.94 0 00-.938.943c0 .52.42.943.938.943a.94.94 0 00.937-.943.94.94 0 00-.938-.943zm.293 3.86a.452.452 0 00-.649.21c-.005.008-.461.84-2.463.84-1.953 0-2.437-.793-2.462-.84a.446.446 0 00-.638-.234.618.618 0 00-.215.761c.063.147.69 1.446 3.315 1.446s3.25-1.299 3.313-1.446a.609.609 0 00-.201-.738z" fill="#2C2C2C"></path></g></svg>
+                    </li>
+                    <li><div><a href="#"><img src="/assets-lego/navbar/cuore.svg" alt=""></a></div></li>
+                    <li><div class="carrello-img-navbar"><a href="#"><img src="/assets-lego/navbar/carrello.svg" alt=""></a>(0)</div></li>
+                    <li><div class="carrello-img-navbar-second"><a href="#"><img src="/assets-lego/navbar/carrello.svg" alt=""></a><span class="numero-carrello">0</span></div></li>
                 </ul>
             </div>
             </div>
@@ -305,7 +372,8 @@
     </div>
   </section>
   <!-- end preferiti -->
-<!-- set in evidenza -->
+
+  <!-- set in evidenza -->
  <section class="set">
  <section class="set-in-evidenza">
   <section class="featured-slider">
@@ -1175,7 +1243,7 @@
                       </a>
                   </div>
                   <a href="#">
-                      <img src="assets-lego/nuovi-set-lego-dreamz/logan-robot-panda.png" width="290"
+                      <img src="assets-lego/nuovi-set-lego-dreamz/logan-robot-panda.png" id="image-dreamz" width="290"
                       height="250" alt="logan robot panda">
                   </a>
                   <div class="badge-conteiner">
@@ -1204,7 +1272,7 @@
                       </a>
                   </div>
                   <a href="#">
-                      <img src="assets-lego/nuovi-set-lego-dreamz/animali-da-sogno.png" width="320"
+                      <img src="assets-lego/nuovi-set-lego-dreamz/animali-da-sogno.png" id="image-dreamz" width="320"
                       height="250" alt="Gli animali da sogno di Izzie">
                   </a>
                   <div class="badge-conteiner">
@@ -1234,7 +1302,7 @@
                       </a>
                   </div>
                   <a href="#">
-                      <img src="assets-lego/nuovi-set-lego-dreamz/moto-gatto-zoey.png" width="290"
+                      <img src="assets-lego/nuovi-set-lego-dreamz/moto-gatto-zoey.png" id="image-dreamz" width="290"
                       height="250" alt="la moto gatto di zoey">
                   </a>
                   <div class="badge-conteiner">
@@ -1262,7 +1330,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/creature-da-incubo.png" width="290" 
+      <img src="assets-lego/nuovi-set-lego-dreamz/creature-da-incubo.png" id="image-dreamz" width="290" 
       height="250" alt="le creature da incubo della Mai-strega">
   </a>
   <div class="badge-conteiner">
@@ -1291,7 +1359,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/dinosauro-robot.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/dinosauro-robot.png" id="image-dreamz" width="290"
       height="250"alt="dinosauro-robot">
   </a>
   <div class="badge-conteiner">
@@ -1321,7 +1389,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/il-corvo-di-mezzanotte.png"width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/il-corvo-di-mezzanotte.png" id="image-dreamz" width="290"
       height="250" alt="il corvo di mezzanotte della Mai-strega">
   </a>
   <div class="badge-conteiner">
@@ -1351,7 +1419,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/castello-di-nocturnia.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/castello-di-nocturnia.png" id="image-dreamz" width="290"
       height="250" alt="il castello di nocturnia">
   </a>
   <div class="badge-conteiner">
@@ -1380,7 +1448,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/battle-mech-mateo-e-zblob.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/battle-mech-mateo-e-zblob.png" id="image-dreamz" width="290"
       height="250" alt="Battle Mech di Mateo e Z-Blob">
   </a>
   <div class="badge-conteiner">
@@ -1408,7 +1476,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/la-torre-di-sandman.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/la-torre-di-sandman.png" id="image-dreamz" width="290"
       height="250" alt="La torre di sandman">
   </a>
   <div class="badge-conteiner">
@@ -1450,7 +1518,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/nave-squalo.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/nave-squalo.png" id="image-dreamz" width="290"
       height="250" alt="nave-squalo Nightmare">
   </a>
   <div class="badge-conteiner">
@@ -1491,7 +1559,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/pegaso-cavallo-volante.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/pegaso-cavallo-volante.png" id="image-dreamz" width="290"
       height="250" alt="Pegaso il cavallo volante">
   </a>
   <div class="badge-conteiner">
@@ -1533,7 +1601,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/casa-sull_albero.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/casa-sull_albero.png" id="image-dreamz" width="290"
       height="250" alt="La fantastica casa sull'albero">
   </a>
   <div class="badge-conteiner">
@@ -1573,7 +1641,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/mateo-e-il-robot.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/mateo-e-il-robot.png" id="image-dreamz" width="290"
       height="250" alt="Mateo e il robot Z-Blob">
   </a>
   <div class="badge-conteiner">
@@ -1615,7 +1683,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/il-mostro-gabbia.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/il-mostro-gabbia.png" id="image-dreamz" width="290"
       height="250" alt="Il mostro gabbia custode oscuro">
   </a>
   <div class="badge-conteiner">
@@ -1656,7 +1724,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/auto-spaziale.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/auto-spaziale.png" id="image-dreamz" width="290"
       height="250" alt="L'auto spaziale del Professore Oswald">
   </a>
   <div class="badge-conteiner">
@@ -1689,7 +1757,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/il-villaggio-dei-sogni.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/il-villaggio-dei-sogni.png" id="image-dreamz" width="290"
       height="250" alt="Il il-villaggio-dei-sogni">
   </a>
   <div class="badge-conteiner">
@@ -1730,7 +1798,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/furgone-tartaruga.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/furgone-tartaruga.png" id="image-dreamz" width="290"
       height="250" alt="Il furgone tartaruga della signora castillo">
   </a>
   <div class="badge-conteiner">
@@ -1771,7 +1839,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/bus-spaziale-signor-oz.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/bus-spaziale-signor-oz.png" id="image-dreamz" width="290"
       height="250" alt="Il bus spaziale del signor oz">
   </a>
   <div class="badge-conteiner">
@@ -1811,7 +1879,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/zoey-e-zian.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/zoey-e-zian.png" id="image-dreamz" width="290"
       height="250" alt="Zoey e Zian, il gatto-gufo">
   </a>
   <div class="badge-conteiner">
@@ -1852,7 +1920,7 @@
       </a>
   </div>
   <a href="#">
-      <img src="assets-lego/nuovi-set-lego-dreamz/fuoristrada-di-mateo.png" width="290"
+      <img src="assets-lego/nuovi-set-lego-dreamz/fuoristrada-di-mateo.png" id="image-dreamz" width="290"
       height="250" alt="Il fuoristrada-di-mateo">
   </a>
   <div class="badge-conteiner">
