@@ -2551,4 +2551,124 @@ display: inline-block;
   
 }
 
+/*in evidenza*/
+.section-in-evidenza{
+  max-width: 400px;
+}
+.h2-inevidenza {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.2rem; 
+}
+.in-evidenza {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.viola{
+  flex-direction: column-reverse;
+}
+.viola-top {
+  position: relative;
+  background-color: #201D48;
+  width: 100%;
+  padding: 1.25rem;
+}
+.viola-top h3,
+.arancione-right h3,
+.gialla-left h3{
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.viola-top p,
+.arancione-right p,
+.gialla-left p {
+  font-size: 0.875rem;
+}
+.arancione{
+  flex-direction: column;
+  background-color: #fb954cf6;
+  max-height: 100%;
+}
+.arancione-right {
+  text-align: center;
+  padding: 1.25rem;
+  width: 100%;
+  height: 100%;
+}
+.gialla{
+  flex-direction: column-reverse;
+  max-height: 100%;
+}
+.gialla-left{
+  text-align: center;
+  padding: 1.25rem;
+}
+.box-img-in-evidenza {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.viola .img-in-evidenza,
+.gialla .img-in-evidenza {
+  width: 100%;
+  height: 243px;
+  object-fit: cover;
+}
+.arancione .img-in-evidenza {
+  width: 60%;
+  object-fit: contain;
+}
+/*end in evidenza*/
+/*Spotlight*/
+.spotlight{
+  margin: 0 10px;
+  padding: 20px 10px;
+  gap: 16px;
+}
+.spotlight h3{
+  font-size: 1.25rem;
+  text-align: center;
+}
+/*end spotlight*/
+/*contenitore-griglia-visualizza-articoli*/
+
+.contenitore-griglia-visualizza-articoli {
+  display: flex; 
+  overflow-x: auto;
+  justify-content: normal;
+  align-items: center; 
+  padding: 20px; 
+  margin: 0 10px;
+}
+
+.griglia-visualizza-articoli {
+  flex: 0 0 100%; 
+  justify-content: normal;
+}
+
+.griglia-visualizza-articoli img {
+  height: auto; 
+}
+
+/* scrollbar settings */
+.contenitore-griglia-visualizza-articoli::-webkit-scrollbar {
+  height: 6px; 
+}
+
+.contenitore-griglia-visualizza-articoli::-webkit-scrollbar-thumb {
+  background-color: gray; 
+}
+
+.contenitore-griglia-visualizza-articoli::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+
+.contenitore-griglia-visualizza-articoli::-webkit-scrollbar-track {
+  background-color: #f1f1f1; 
+}
+/* end scrollbar settings */
+
+
 }
