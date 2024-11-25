@@ -2766,6 +2766,7 @@ display: inline-block;
 .dfoot-bg img:nth-child(2){
   width: 390px;
   height: 390px;
+  display: block;
 }
 .dfoot-button{
 justify-content: center;
