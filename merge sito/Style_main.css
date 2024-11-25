@@ -1534,6 +1534,9 @@
     position: relative;
     width: 100%;
   }
+  .dfoot-bg img:nth-child(2){
+    display: none;
+  }
   
   .dfoot-banner {
     position: absolute; 
