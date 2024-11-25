@@ -226,3 +226,36 @@ document.addEventListener("DOMContentLoaded", () => {
     footer.style.display = "block";
   });
 });
+
+// Leggi Tutto
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("toggle-button");
+  const moreText = document.getElementById("more-text");
+
+  // Funzione per controllare la larghezza della finestra
+  function checkWindowSize() {
+    if (window.innerWidth <= 400) {
+      moreText.classList.add("hidden");  // Nasconde il testo in eccesso su schermi piccoli
+      toggleButton.style.display = "inline";  // Mostra il bottone
+    } else {
+      moreText.classList.remove("hidden");  // Mostra il testo in eccesso su schermi più larghi
+      
+    }
+  }
+
+  toggleButton.addEventListener("click", function (event) {
+    event.preventDefault(); 
+
+    if (moreText.classList.contains("hidden")) {
+      moreText.classList.remove("hidden");
+      toggleButton.textContent = "Leggi Meno";
+    } else {
+      moreText.classList.add("hidden");
+      toggleButton.textContent = "Leggi Tutto";
+    }
+  });
+
+  // Controlla la larghezza della finestra al caricamento e al ridimensionamento
+  checkWindowSize();
+  window.addEventListener("resize", checkWindowSize);
+});

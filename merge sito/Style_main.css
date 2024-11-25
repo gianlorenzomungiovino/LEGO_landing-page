@@ -2736,6 +2736,11 @@ display: inline-block;
   background-color: #f1f1f1; 
 }
 /* end scrollbar settings */
+/*welcometo*/
+.hidden {
+  display: none; 
+}
+/*end welcometo*/
 
 /* difendi il mondo dei sogni */
 #d-img{
