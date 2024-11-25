@@ -2075,11 +2075,19 @@ footer a{
   display: none;
 }
 
+.hm-menu-container{
+  display: none;
+}
+
 @media screen and (max-width: 400px) {
-  .hm-menu-container{
+  .hamburger-menu {
     display: block;
   }
-  
+
+  .hm-menu-container{
+    display: none;
+}
+
   .hm-menu-top{
     height: 52px;
     display: flex;

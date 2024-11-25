@@ -178,3 +178,51 @@ removeX.addEventListener("click", (event) => {
   navbarTop.style.display = "none";
   event.preventDefault();
 });
+
+// hamburger menu a comparsa
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".hm-menu-container");
+
+  const openMenuButton = document.querySelector(".btn-hamburger");
+  const closeMenuButton = document.querySelector("#x-close");
+  const header = document.querySelector("header");
+  const preferiti = document.querySelector(".preferiti");
+  const set = document.querySelector(".set");
+  const wtbSection = document.querySelector(".wtb-section");
+  const dream = document.querySelector(".dream");
+  const builtByYou = document.querySelector("#built-by-you");
+  const sectionInEvidenza = document.querySelector(".section-in-evidenza");
+  const welcometo = document.querySelector(".welcometo");
+  const footer = document.querySelector("footer");
+
+  // Apri il menu
+  openMenuButton.addEventListener("click", () => {
+    menu.style.display = "block";
+
+    header.style.display = "none";
+    preferiti.style.display = "none";
+    set.style.display = "none";
+    wtbSection.style.display = "none";
+    dream.style.display = "none";
+    builtByYou.style.display = "none";
+    sectionInEvidenza.style.display = "none";
+    welcometo.style.display = "none";
+    footer.style.display = "none";
+  });
+
+  // Chiudi il menu
+  closeMenuButton.addEventListener("click", () => {
+    menu.style.display = "none";
+
+    header.style.display = "block";
+    preferiti.style.display = "block";
+    set.style.display = "block";
+    wtbSection.style.display = "block";
+    dream.style.display = "block";
+    builtByYou.style.display = "block";
+    sectionInEvidenza.style.display = "block";
+    welcometo.style.display = "block";
+    footer.style.display = "block";
+  });
+});
