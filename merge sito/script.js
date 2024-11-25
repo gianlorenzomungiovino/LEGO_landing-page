@@ -184,7 +184,7 @@ removeX.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".hm-menu-container");
 
-  const openMenuButton = document.querySelector(".btn-hamburger");
+  const openMenuButton = document.querySelector(".icon-hamburger");
   const closeMenuButton = document.querySelector("#x-close");
   const header = document.querySelector("header");
   const preferiti = document.querySelector(".preferiti");
