@@ -194,33 +194,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const footer = document.querySelector("footer");
 
   // Apri il menu
-  openMenuButton.addEventListener("click", () => {
+  openMenuButton.addEventListener("click", (event) => {
     menu.style.display = "block";
 
-    header.style.display = "none";
-    preferiti.style.display = "none";
-    set.style.display = "none";
-    wtbSection.style.display = "none";
-    dream.style.display = "none";
-    builtByYou.style.display = "none";
-    sectionInEvidenza.style.display = "none";
-    welcometo.style.display = "none";
-    footer.style.display = "none";
+    document.body.classList.add("no-scroll");
+    event.preventDefault();
+
+    // header.style.display = "none";
+    // preferiti.style.display = "none";
+    // set.style.display = "none";
+    // wtbSection.style.display = "none";
+    // dream.style.display = "none";
+    // builtByYou.style.display = "none";
+    // sectionInEvidenza.style.display = "none";
+    // welcometo.style.display = "none";
+    // footer.style.display = "none";
   });
 
   // Chiudi il menu
   closeMenuButton.addEventListener("click", () => {
     menu.style.display = "none";
 
-    header.style.display = "block";
-    preferiti.style.display = "block";
-    set.style.display = "block";
-    wtbSection.style.display = "block";
-    dream.style.display = "block";
-    builtByYou.style.display = "block";
-    sectionInEvidenza.style.display = "block";
-    welcometo.style.display = "block";
-    footer.style.display = "block";
+    document.body.classList.remove("no-scroll");
+
+    // header.style.display = "block";
+    // preferiti.style.display = "block";
+    // set.style.display = "block";
+    // wtbSection.style.display = "block";
+    // dream.style.display = "block";
+    // builtByYou.style.display = "block";
+    // sectionInEvidenza.style.display = "block";
+    // welcometo.style.display = "block";
+    // footer.style.display = "block";
   });
 });
 

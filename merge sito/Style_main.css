@@ -2099,8 +2099,14 @@ footer a{
   display: none;
 }
 
+
 .hm-menu-container{
   display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  background-color: white;
 }
 
 .hamburger-menu{
@@ -2150,7 +2156,6 @@ footer a{
     flex-direction: column;
     cursor: pointer;
     align-items: center;
-
   }
 
   .icon-hamburger {
@@ -2175,6 +2180,7 @@ footer a{
   }
 
   .hm-menu-container{
+    width: 384px;
     display: none;
 }
 
@@ -2487,6 +2493,7 @@ footer a{
 
   .hm-menu-container{
     display: none;
+    width: 390px;
 }
 
   .hm-menu-top{
@@ -2706,7 +2713,11 @@ footer a{
 
 .header-img{
   display: block;
+  height: auto;
+  width: auto;
+  overflow: visible;
 }
+
 .banner-img{
   display: none;
 }
