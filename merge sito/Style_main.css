@@ -519,6 +519,7 @@
   }
   
   .icons a {
+    margin: 0;
     color: initial;
     text-decoration: none;
   }
@@ -2380,9 +2381,17 @@ footer a{
     min-width: 177px;
   }
 
-  /* .banner-img{
+  .header-img{
     height: 298.66px;
-  } */
+    width: 768px;
+    overflow: hidden;
+  }
+
+  .banner-img{
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+  }
 
   .header-img-right{
     max-width: 384px;
@@ -2390,8 +2399,21 @@ footer a{
     gap: 10px;
   }
 
+  .icons-link{
+    padding: 24px 20px;
+  }
+
+  .icons{
+    width: 100%;
+  }
+
+  .icons img{
+    width: 74px;
+    height: 59.81px;
+  }
+
   .titolo-preferiti{
-    margin-top: 55px;
+    margin-top: 35px;
   }
 }
 
