@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 let lastScrollPosition = 0;
 const navbar = document.querySelector(".navbar-bottom");
-console.log(navbar);
 
 const triggerHeight = 1;
 // const triggerHeight = 126;
