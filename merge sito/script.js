@@ -1,28 +1,26 @@
 // /Sezione della lente
 document.addEventListener("DOMContentLoaded", function () {
   const lente = document.querySelector(".lente");
-  const inputContenitoreCerca = document.querySelector(
-    ".input-contenitore-cerca"
-  );
-  // const inputLente = document.querySelector("lenteuno icona-cerca");
+  const ContenitoreCerca = document.querySelector(".input-contenitore-cerca");
+
   const iconaX = document.querySelector(".icona-x");
   const overlay = document.querySelector(".overlay");
 
   // Nasconde inizialmente l'input
-  inputContenitoreCerca.style.display = "none";
+  ContenitoreCerca.style.display = "none";
   overlay.style.display = "none";
 
   // Quando si clicca sulla lente
   lente.addEventListener("click", function () {
     lente.style.display = "none";
-    inputContenitoreCerca.style.display = "flex";
+    ContenitoreCerca.style.display = "flex";
     overlay.style.display = "block";
     document.body.classList.add("no-scroll");
   });
 
   // Quando si clicca sulla X
   iconaX.addEventListener("click", function () {
-    inputContenitoreCerca.style.display = "none";
+    ContenitoreCerca.style.display = "none";
     lente.style.display = "block";
     overlay.style.display = "none";
     document.body.classList.remove("no-scroll");
@@ -231,23 +229,23 @@ document.addEventListener("DOMContentLoaded", () => {
 const toggleButton = document.getElementById("toggle-button");
 const moreText = document.getElementById("more-text");
 
-console.log(toggleButton)
-console.log(moreText)
+console.log(toggleButton);
+console.log(moreText);
 
 toggleButton.addEventListener("click", (event) => {
   event.preventDefault();
   console.log("Pulsante cliccato!"); // Debug: conferma il click
-  console.log("Classe 'hidden' presente su moreText:", moreText.classList.contains("hidden")); // Controlla la presenza della classe
+  console.log(
+    "Classe 'hidden' presente su moreText:",
+    moreText.classList.contains("hidden")
+  ); // Controlla la presenza della classe
 
-const mostraTesto = moreText.classList.contains("hidden");
+  const mostraTesto = moreText.classList.contains("hidden");
   if (mostraTesto) {
-
     moreText.classList.remove("hidden");
     toggleButton.textContent = "Leggi Meno";
   } else {
-
     moreText.classList.add("hidden");
     toggleButton.textContent = "Leggi Tutto";
   }
-
 });
