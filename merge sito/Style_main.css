@@ -2528,7 +2528,7 @@ min-height: 1.2rem;
 
 /* scrollbar lego dreamz */
 .dream{
-  width: 390px;
+  width:  390px;
 }
 .d-logo-mobile{
   display: block;
@@ -2538,9 +2538,7 @@ min-height: 1.2rem;
 .d-logo{
  display: none;
 }
-.d-logo-mobile{
-  display: block;
-}
+
 .d-logo-mobile img:nth-child(2){
   position: relative;
   left: 60%;
@@ -2582,7 +2580,7 @@ min-height: 1.2rem;
 .dhead-banner{
   display: flex;
   flex-direction: column;
-  width: 420px;
+  width: 390px;
   align-items: center;
 text-align: center;
 }
