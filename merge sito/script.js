@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const lente = document.querySelector(".lente");
   const ContenitoreCerca = document.querySelector(".input-contenitore-cerca");
+  // const inputLente = document.querySelector(".lenteuno.icona.cerca");
 
   const iconaX = document.querySelector(".icona-x");
   const overlay = document.querySelector(".overlay");
@@ -15,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     lente.style.display = "none";
     ContenitoreCerca.style.display = "flex";
     overlay.style.display = "block";
+    // inputLente.focus();
     document.body.classList.add("no-scroll");
   });
 
@@ -25,16 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
     overlay.style.display = "none";
     document.body.classList.remove("no-scroll");
   });
-
-  // // Quando si clicca sul campo di input, preveniamo lo scroll verso l'alto
-  // inputContenitoreCerca.addEventListener("focus", function (event) {
-  //   event.preventDefault(); // Preveniamo il comportamento predefinito
-  //   // Scrolla in modo controllato per non causare il movimento verso l'alto
-  //   inputContenitoreCerca.scrollIntoView({
-  //     behavior: "smooth",
-  //     block: "center",
-  //   });
-  // });
 });
 
 //fINE SEZIONE LENTE
@@ -181,51 +173,50 @@ removeX.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
   const menu = document.querySelector(".hm-menu-container");
 
+  const overlay = document.querySelector(".overlay");
+
   const openMenuButton = document.querySelector(".icon-hamburger");
   const closeMenuButton = document.querySelector("#x-close");
-  const header = document.querySelector("header");
-  const preferiti = document.querySelector(".preferiti");
-  const set = document.querySelector(".set");
-  const wtbSection = document.querySelector(".wtb-section");
-  const dream = document.querySelector(".dream");
-  const builtByYou = document.querySelector("#built-by-you");
-  const sectionInEvidenza = document.querySelector(".section-in-evidenza");
-  const welcometo = document.querySelector(".welcometo");
-  const footer = document.querySelector("footer");
+
+  let scrollPosition = 0;
+  const navbarHeight = 3.2;
 
   // Apri il menu
   openMenuButton.addEventListener("click", (event) => {
+    overlay.style.display = "block";
+
+    if (window.scrollY !== 0) {
+      scrollPosition =
+        window.scrollY +
+        navbarHeight *
+          parseFloat(getComputedStyle(document.documentElement).fontSize); // Converti in px;
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollPosition}px`; // Imposta il top per mantenere la posizione
+      document.body.style.width = "100%";
+    }
+
     menu.style.display = "block";
 
     document.body.classList.add("no-scroll");
     event.preventDefault();
-
-    // header.style.display = "none";
-    // preferiti.style.display = "none";
-    // set.style.display = "none";
-    // wtbSection.style.display = "none";
-    // dream.style.display = "none";
-    // builtByYou.style.display = "none";
-    // sectionInEvidenza.style.display = "none";
-    // welcometo.style.display = "none";
-    // footer.style.display = "none";
   });
 
   // Chiudi il menu
   closeMenuButton.addEventListener("click", () => {
+    overlay.style.display = "none";
+    console.log(scrollPosition);
+
+    document.body.style.position = ""; // Rimuove il blocco
+    document.body.style.top = "";
+    if (window.scrollY === 0) {
+      window.scrollTo(0, 0); // Se siamo al top della pagina torniamo al top
+    } else {
+      window.scrollTo(0, scrollPosition);
+    }
+
     menu.style.display = "none";
 
     document.body.classList.remove("no-scroll");
-
-    // header.style.display = "block";
-    // preferiti.style.display = "block";
-    // set.style.display = "block";
-    // wtbSection.style.display = "block";
-    // dream.style.display = "block";
-    // builtByYou.style.display = "block";
-    // sectionInEvidenza.style.display = "block";
-    // welcometo.style.display = "block";
-    // footer.style.display = "block";
   });
 });
 

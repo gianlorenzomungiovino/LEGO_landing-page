@@ -2179,7 +2179,8 @@ footer a{
   }
 
   .hm-menu-container{
-    width: 384px;
+    width: 375px;
+    height: 105vh;
     display: none;
 }
 
