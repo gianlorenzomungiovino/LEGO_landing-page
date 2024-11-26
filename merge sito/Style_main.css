@@ -1134,6 +1134,7 @@
   /* end cosa stanno comprando gli altri */
 
   /* sezione lego Dreamzz */
+  
   .d-btn{
     display: flex;
     justify-content: center;
@@ -2106,6 +2107,7 @@ footer a{
 }
 
 @media screen and (max-width: 400px) {
+  
   .hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -2525,6 +2527,9 @@ min-height: 1.2rem;
 
 
 /* scrollbar lego dreamz */
+.dream{
+  width: 390px;
+}
 .d-logo-mobile{
   display: block;
   width: 390px;
