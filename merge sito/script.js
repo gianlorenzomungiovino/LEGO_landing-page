@@ -245,3 +245,57 @@ toggleButton.addEventListener("click", (event) => {
     toggleButton.textContent = "Leggi Tutto";
   }
 });
+
+
+// footer
+// chi siamo tendina
+const secondoContenitore=document.querySelector(".secondo-contenitore")
+const secondoContenitoreLista=document.querySelector(".secondo-contenitore-lista")
+
+secondoContenitore.addEventListener('click', ()=>{
+  if(secondoContenitoreLista.style.display==='block'){
+    secondoContenitoreLista.style.display='none'
+  }else{
+    secondoContenitoreLista.style.display='block'
+  }
+})
+
+// end
+// supporto tendina
+const terzoContenitore=document.querySelector(".terzo-contenitore")
+const terzoContenitoreLista=document.querySelector(".terzo-contenitore-lista")
+
+terzoContenitore.addEventListener('click', ()=>{
+  if(terzoContenitoreLista.style.display==='block'){
+    terzoContenitoreLista.style.display='none'
+  }else{
+    terzoContenitoreLista.style.display='block'
+  }
+
+})
+// end
+
+// attrazioni tendina
+const quartoContenitore=document.querySelector(".quarto-contenitore")
+const quartoContenitoreLista=document.querySelector(".quarto-contenitore-lista")
+
+quartoContenitore.addEventListener('click', ()=>{
+  if(quartoContenitoreLista.style.display==='block'){
+    quartoContenitoreLista.style.display='none'
+  }else{
+    quartoContenitoreLista.style.display='block'
+  }
+})
+// end
+
+// altre informazioni tendina
+const quintoContenitore=document.querySelector(".quinto-contenitore")
+const quintoContenitoreLista=document.querySelector(".quinto-contenitore-lista")
+
+quintoContenitore.addEventListener('click', ()=>{
+  if(quintoContenitoreLista.style.display==='block'){
+    quintoContenitoreLista.style.display='none'
+  }else{
+    quintoContenitoreLista.style.display='block'
+  }
+})
