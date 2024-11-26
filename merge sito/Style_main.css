@@ -2112,6 +2112,39 @@ footer a{
 
 
 @media screen and (max-width: 800px) {
+  .header-img-right-text h2 {
+    font-size: 1.25rem;
+    line-height: 1.9375rem;
+  }
+  .header-img-right-text p{
+    font-size: 0.875rem;
+    line-height: 1.1875rem;
+  }
+  .btn.compra-socio {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.1875rem;
+    letter-spacing: normal;
+    white-space: nowrap;
+  }
+
+  .dhead-buttons{
+ flex-direction: column;
+ padding: 0;
+ gap: 2px;
+ align-items: center;
+
+  }
+
+.d-btn{
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.1875rem;
+  letter-spacing: normal;
+
+  white-space: nowrap;
+}
+
   .hamburger-menu {
     display: flex;
     flex-direction: column;
