@@ -225,3 +225,29 @@ document.addEventListener("DOMContentLoaded", () => {
     footer.style.display = "block";
   });
 });
+
+// Leggi Tutto
+
+const toggleButton = document.getElementById("toggle-button");
+const moreText = document.getElementById("more-text");
+
+console.log(toggleButton)
+console.log(moreText)
+
+toggleButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log("Pulsante cliccato!"); // Debug: conferma il click
+  console.log("Classe 'hidden' presente su moreText:", moreText.classList.contains("hidden")); // Controlla la presenza della classe
+
+const mostraTesto = moreText.classList.contains("hidden");
+  if (mostraTesto) {
+
+    moreText.classList.remove("hidden");
+    toggleButton.textContent = "Leggi Meno";
+  } else {
+
+    moreText.classList.add("hidden");
+    toggleButton.textContent = "Leggi Tutto";
+  }
+
+});

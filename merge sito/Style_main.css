@@ -2755,6 +2755,11 @@ display: inline-block;
   background-color: #f1f1f1; 
 }
 /* end scrollbar settings */
+/*welcometo*/
+.hidden {
+  display: none; 
+}
+/*end welcometo*/
 
 /* difendi il mondo dei sogni */
 #d-img{
@@ -2827,3 +2832,165 @@ display: flex;
   display: block;
 }
 }
+/* footer media-query mobile*/
+@media (max-width: 390px) {
+
+  .main-contenitore {
+     display: flex;
+     flex-wrap: wrap; 
+     padding: 0 5px;
+     flex-direction: column; 
+     justify-content: flex-start;  
+     align-items: flex-start; 
+   
+   }
+   
+ 
+   .second-contenitore-sopra {
+    flex-direction: column;
+    align-items: left; 
+    padding: 20px;     
+    margin: 0; 
+    margin-top: 20px;    
+   }  
+ 
+    
+ 
+   .primo-contenitore-sopra {
+     order: 1;
+     display: flex;
+     flex-direction: row;
+     gap: 10px;
+   }
+ 
+   .img-contenitore {
+     max-width: 80px;
+   }
+ 
+  .img-contenitore img {
+     width: 100%;
+   }
+ 
+   .svg-contenitore{
+     border: none;
+     margin-bottom: 38%;
+   }
+ 
+   .svg-mappa {
+     width: 100%;
+     margin-bottom: 20px;
+   }
+ 
+   .primo-contenitore-sotto{
+    justify-content: left;
+    margin-bottom: 10px;
+    order: 2;
+   }
+   .primo-contenitore-sotto a:hover {
+    text-decoration: underline;
+   }
+   
+   .contenitore-flex{
+     display: flex;
+     flex-direction: column;
+     justify-content: left;
+     flex-wrap: wrap;
+   }
+   .contenitore-flex ul {
+     display: none;
+   }
+ 
+   .footer-h3{
+     display: flex;
+     flex-direction: column;
+     justify-content: left;
+     text-transform: uppercase;
+     font-size: 16px;
+     border-top: 1px solid #ffffff;
+     width: 300px;
+    
+   } 
+ 
+   .second-contenitore-centro {
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     gap: 20px;
+     padding: 20px;     
+     margin: 0;
+   }
+   .marketing{
+    order: 2;
+   }
+   .marketing h3{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 15px;
+   }
+   
+   .input{
+     display: flex;
+     flex-direction: row;
+     
+   }
+   .input input{
+     width: 60px;  
+    height: 60px;
+   }
+   .input button{
+     width: 60px;  
+     height: 60px;
+     
+   }
+   .follow{
+     order: 3;
+     border-top: 0.5px solid #ffffff;
+   }
+   .follow h3{
+     text-transform: uppercase;
+     font-weight: normal;
+     font-size: 15px;
+     text-align: left;
+     width: 2000px
+   }
+ 
+   .follow-img {
+     justify-content: left;
+     margin-bottom: 10px;
+   }
+ 
+   .follow-img img {
+    width: 40px;  
+    height: 40px; 
+   }
+   
+ 
+   .second-contenitore-sotto {
+     padding: 0;
+     border-top: 0.5px solid #ffffff;
+   }
+  .second-contenitore-sotto{
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+   .second-contenitore-sotto ul {
+     display: block;
+     justify-content: left;
+   }
+   .second-contenitore-lista {
+     margin-right: 0;
+   }
+ 
+   .second-contenitore-lista a{
+     font-size: 12px;
+     line-height: 0;
+    
+   }
+   .second-contenitore-lista a:hover {
+     text-decoration: underline;
+   }
+   .second-contenitore-sotto p {
+    text-align: left;
+    padding: 10px;
+   }
+ }
