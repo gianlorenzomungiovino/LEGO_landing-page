@@ -2487,7 +2487,7 @@ footer a{
 
   /* costruiti dai fan */
   .bby-box{
-    width: 790px;
+    width: 800px;
   }
  
   .bby-img{
@@ -3542,7 +3542,8 @@ display: flex;
  }
  
  .bby-top p{
-   font-size: 0.9rem;
+   font-size: 0.8rem;
+   width: 350px;
  }
  .bby-card-section{
    background-color: rgb(255, 255, 255);
