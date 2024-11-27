@@ -200,25 +200,26 @@ document.addEventListener("DOMContentLoaded", () => {
     document.body.classList.add("no-scroll");
     event.preventDefault();
   });
-
+  
   // Chiudi il menu
+ 
   closeMenuButton.addEventListener("click", () => {
     overlay.style.display = "none";
     console.log(scrollPosition);
 
     document.body.style.position = ""; // Rimuove il blocco
     document.body.style.top = "";
-    if (window.scrollY === 0) {
-      window.scrollTo(0, 0); // Se siamo al top della pagina torniamo al top
-    } else {
-      window.scrollTo(0, scrollPosition);
-    }
+
+    
+    window.scrollTo(0, scrollPosition);
 
     menu.style.display = "none";
-
     document.body.classList.remove("no-scroll");
-  });
 });
+
+ 
+});
+
 
 // Leggi Tutto
 

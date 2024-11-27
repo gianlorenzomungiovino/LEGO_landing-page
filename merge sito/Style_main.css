@@ -2479,6 +2479,12 @@ footer a{
     margin: 20px;
   }
 
+/* card carosello lego dreamz Tablet */
+.card{
+  
+}
+
+
   /* costruiti dai fan */
   .bby-box{
     width: 790px;
@@ -2506,8 +2512,7 @@ footer a{
   .bby-top h2{
    font-size: 1.5rem;
   }
-}
-/*footer*/
+  /*footer*/
 
 .main-contenitore {
   display: flex;
@@ -2812,6 +2817,8 @@ display: block;
 .quinto-contenitore-lista{
  display: none;
 }
+}
+
 
 
 
