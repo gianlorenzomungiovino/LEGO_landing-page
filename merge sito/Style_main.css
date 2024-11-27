@@ -2509,6 +2509,8 @@ footer a{
 
 }
 #dreamz-bg-tablet{
+  margin: 0;
+  max-width: 768px;
   display: block;
 }
  .dfoot-banner{
@@ -2579,7 +2581,7 @@ footer a{
     justify-content: center;
     list-style: none;
     margin: 0px;
-    width: 790px;
+    width: 768px;
   }
   .bby-top p{
     width: 688px;
@@ -2595,7 +2597,7 @@ footer a{
   flex-wrap: wrap; 
   padding: 0 5px;
   flex-direction: column; 
-  width: 790px;
+  width: 768px;
 
 }
 
@@ -2607,7 +2609,7 @@ footer a{
  margin-bottom: 0;
  display: flex;
  gap: 10px;
- width: 790px;
+ width: 768px;
 }  
 
 
@@ -2662,12 +2664,15 @@ footer a{
  display: flex;
  flex-direction: column;
  cursor: pointer;
- width: 780px;
+ width: 768px;
  
 }
 .contenitore-flex div{
  padding-left: 0;
+}
 
+.contenitore-flex li{
+  max-width: 768px;
 }
 
 
@@ -2679,15 +2684,14 @@ footer a{
   text-transform: uppercase;
   font-size: 18px;
   border-top: 1px solid #ffffff;
-  width: 790px;
+  width: 768px;
   margin-bottom: 20px;
- 
-} 
+}
 
 .second-contenitore-centro {
 padding: 20px 20px 0;
 margin-bottom: 1.875rem;
-max-width: 800px;
+max-width: 768px;
 margin-left: 0;
 margin-right: 10px;
 border-top: 1px solid white;
@@ -2743,19 +2747,19 @@ border-top: 1px solid white;
  
 /* frecce footer */
 .secondo-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .terzo-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .quarto-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .quinto-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .secondo-contenitore img{
@@ -2861,23 +2865,23 @@ display: block;
 }
 
 .secondo-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 1px solid rgb(214, 214, 214);
  border-top:1px solid rgb(214, 214, 214); 
 }
 
 .terzo-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 0.8px solid rgb(214, 214, 214);
  border-top:0.8px  solid rgb(214, 214, 214); 
 }
 .quarto-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 0.8px  solid rgb(214, 214, 214);
  border-top:0.8px  solid rgb(214, 214, 214); 
 }
 .quinto-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 0.8px  solid rgb(214, 214, 214);
  border-top:0.8px  solid rgb(214, 214, 214); 
 }
