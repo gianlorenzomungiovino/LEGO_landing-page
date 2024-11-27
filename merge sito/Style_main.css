@@ -2487,7 +2487,7 @@ footer a{
 
   /* costruiti dai fan */
   .bby-box{
-    width: 800px;
+    width: 768px;
   }
  
   .bby-img{
@@ -3536,10 +3536,11 @@ display: flex;
 
 /* costruiti dai fan */
 .bby-box{
-  width: 398px;
+  width: 390px;
 }
 .bby-top{
   width: 100%;
+  width: 390px;
  }
  .bby-top h2{
    font-size: 1.5rem;
