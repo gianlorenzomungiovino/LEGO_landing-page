@@ -990,6 +990,7 @@
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    padding: 30px 60px 60px;
     
   }
   
@@ -1604,7 +1605,7 @@
 
   .bby-card-section{
     display: flex;
-    width: 100rem;
+    width: auto;
 
   }
 
@@ -1614,8 +1615,8 @@
     align-items: center;
   }
   .bby-img{
-    width: 25rem;
-    height: 25rem;
+    width: 350px;
+    height: 350px;
     display: flex;
     padding: 10px;
 
@@ -2061,6 +2062,10 @@ footer a{
 .follow-img a svg{
   width: 100%;
 }
+.follow-img img{
+  width: 40px;
+  height: 40px;
+}
 
 .input{
   max-width: 260px;
@@ -2071,7 +2076,8 @@ footer a{
   width: 100%;
   background: rgb(255, 255, 255);
   color: rgb(20, 20, 20);
-  height: 25px;
+  height: 55px;
+  width: 201px;
   padding: 11px 10px;
   border: 1px solid rgb(224, 224, 224);
 }
@@ -2081,8 +2087,9 @@ footer a{
   margin-right: -1px;
   border-radius: 0px 0.3125rem 0.3125rem 0px;
   box-shadow: none;
-  width: 30%;
-  max-height: 100%;
+  width: 49px;
+
+  height: 55px;
   padding-top: 0px;
   padding-bottom: 0px;
   background-color: #E96F14;
@@ -3469,6 +3476,9 @@ margin-top: 5px;
 .card-wtb-link{
 min-height: 1.2rem;
 }
+.wtb-section{
+  padding: 10px;
+}
 
 
 /* scrollbar lego dreamz */
@@ -3742,6 +3752,7 @@ display: inline-block;
   margin: 0px;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  text-align: center;
 }
 .dfoot-left-mobile span{
   font-size: 0.875rem;

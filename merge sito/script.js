@@ -253,89 +253,61 @@ toggleButton.addEventListener("click", (event) => {
 });
 
 // footer
-// chi siamo tendina
-const secondoContenitore = document.querySelector(".secondo-contenitore");
-const secondoContenitoreLista = document.querySelector(
-  ".secondo-contenitore-lista"
-);
+function handleFooterDropdowns(event) {
+  if (mediaQuery400.matches || mediaQuery800.matches) {
+    
+    // Footer: Chi siamo tendina
+    const secondoContenitore = document.querySelector(".secondo-contenitore");
+    const secondoContenitoreLista = document.querySelector(".secondo-contenitore-lista");
 
-secondoContenitore.addEventListener("click", () => {
-  if (secondoContenitoreLista.style.display === "block") {
-    secondoContenitoreLista.style.display = "none";
-  } else {
-    secondoContenitoreLista.style.display = "block";
-  }
-});
+    secondoContenitore.addEventListener("click", () => {  
+      if (secondoContenitoreLista.style.display === "block") {
+        secondoContenitoreLista.style.display = "none";
+      } else {
+        secondoContenitoreLista.style.display = "block";
+      }
+    });
 
-// end
-// supporto tendina
-const terzoContenitore = document.querySelector(".terzo-contenitore");
-const terzoContenitoreLista = document.querySelector(
-  ".terzo-contenitore-lista"
-);
+    // Footer: Supporto tendina
+    const terzoContenitore = document.querySelector(".terzo-contenitore");
+    const terzoContenitoreLista = document.querySelector(".terzo-contenitore-lista");
 
-terzoContenitore.addEventListener("click", () => {
-  if (terzoContenitoreLista.style.display === "block") {
-    terzoContenitoreLista.style.display = "none";
-  } else {
-    terzoContenitoreLista.style.display = "block";
-  }
-});
-// end
+    terzoContenitore.addEventListener("click", () => {
+      if (terzoContenitoreLista.style.display === "block") {
+        terzoContenitoreLista.style.display = "none";
+      } else {
+        terzoContenitoreLista.style.display = "block";
+      }
+    });
 
-// attrazioni tendina
-const quartoContenitore = document.querySelector(".quarto-contenitore");
-const quartoContenitoreLista = document.querySelector(
-  ".quarto-contenitore-lista"
-);
+    // Footer: Attrazioni tendina
+    const quartoContenitore = document.querySelector(".quarto-contenitore");
+    const quartoContenitoreLista = document.querySelector(".quarto-contenitore-lista");
 
-quartoContenitore.addEventListener("click", () => {
-  if (quartoContenitoreLista.style.display === "block") {
-    quartoContenitoreLista.style.display = "none";
-  } else {
-    quartoContenitoreLista.style.display = "block";
-  }
-});
-// end
+    quartoContenitore.addEventListener("click", () => {
+      if (quartoContenitoreLista.style.display === "block") {
+        quartoContenitoreLista.style.display = "none";
+      } else {
+        quartoContenitoreLista.style.display = "block";
+      }
+    });
 
-// altre informazioni tendina
-const quintoContenitore = document.querySelector(".quinto-contenitore");
-const quintoContenitoreLista = document.querySelector(
-  ".quinto-contenitore-lista"
-);
+    // Footer: Altre informazioni tendina
+    const quintoContenitore = document.querySelector(".quinto-contenitore");
+    const quintoContenitoreLista = document.querySelector(".quinto-contenitore-lista");
 
-quintoContenitore.addEventListener("click", () => {
-  if (quintoContenitoreLista.style.display === "block") {
-    quintoContenitoreLista.style.display = "none";
-  } else {
-    quintoContenitoreLista.style.display = "block";
-  }
-});
+    quintoContenitore.addEventListener("click", () => {
+      if (quintoContenitoreLista.style.display === "block") {
+        quintoContenitoreLista.style.display = "none";
+      } else {
+        quintoContenitoreLista.style.display = "block";
+      }
+    });
 
-const moveSxButton = document.querySelector("#sx");
-const moveDxButton = document.querySelector("#dx");
-const cardEvidenzaWrapper = document.querySelector(".container-articoli");
-
-function moveCarte(distance) {
-  cardEvidenzaWrapper.scrollBy({
-    left: distance,
-    behavior: "smooth",
-  });
+  } 
 }
 
-moveSxButton.addEventListener("click", function () {
-  moveCarte(-300);
-});
+handleFooterDropdowns();
 
-moveDxButton.addEventListener("click", function () {
-  moveCarte(300);
-});
-
-cardEvidenzaWrapper.addEventListener("scroll", function () {
-  const scrollLeft = cardEvidenzaWrapper.scrollLeft;
-  const maxScrollLeft =
-    cardEvidenzaWrapper.scrollWidth - cardEvidenzaWrapper.clientWidth;
-
-  moveSxButton.style.opacity = scrollLeft > 0 ? 1 : 0.5;
-  moveDxButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
-});
+mediaQuery400.addEventListener('change', handleFooterDropdowns);
+mediaQuery800.addEventListener('change', handleFooterDropdowns);
