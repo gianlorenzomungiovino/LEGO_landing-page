@@ -2827,6 +2827,10 @@ display: block;
 
 
 @media screen and (max-width: 400px) {
+
+  .input-contenitore-cerca {
+margin-right: -100px;
+  }
   
   .hamburger-menu {
     display: flex;
