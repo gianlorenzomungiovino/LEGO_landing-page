@@ -1231,7 +1231,9 @@
   #dream-foot-bg{
     display: none;
   }
-  
+  #dreamz-bg-tablet{
+    display: none;
+  }
   .dream h2{
     font-size: 2rem;
     font-weight: var(--font-weight-normal);
@@ -2483,10 +2485,86 @@ footer a{
   }
 
 /* card carosello lego dreamz Tablet */
-.card{
-  
+
+.conteiner{
+  width: auto;
+}
+.titoli h2{
+  font-size: 1.5rem;
+    line-height: 2.3125rem;
+}
+.titoli{
+  justify-content: space-between;
+}
+.dhead-bg img{
+  width: 768px;
+  height: 298px;
 }
 
+.dfoot-bg img{
+  width: 768px;
+  height: 298px;
+}
+.dhead-mid h2{
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
+  width: 345px;
+
+}
+#dreamz-bg-tablet{
+  margin: 0;
+  max-width: 768px;
+  display: block;
+}
+ .dfoot-banner{
+  position: absolute;
+        max-width: 45%;
+        padding: 0px;
+        background-color: transparent;
+        text-align: right;
+        right: 3.75rem;
+        top: 50%;
+        transform: translateY(-50%);
+ }
+.dream h2{
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
+  width: 345px;
+  height: 31px;
+  text-align: right;
+}
+.dream span{
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+}
+.dhead-banner{
+  width: 345px;
+  height: 281px;
+}
+.card-carosello{
+  padding: 1.875rem 1.25rem;
+    width: auto;
+}
+.dhead-mid span{
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  width: 345px;
+  text-align: center;
+}
+.d-btn{
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  margin-top: 0.9375rem;
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  pointer-events: all;
+  display: flex
+;
+  -webkit-box-align: center;
+  align-items: center;
+  font-weight: 500;
+}
+/* end lego dramz tablet */
 
   /* costruiti dai fan */
   .bby-box{
@@ -2506,7 +2584,7 @@ footer a{
     justify-content: center;
     list-style: none;
     margin: 0px;
-    width: 790px;
+    width: 768px;
   }
   .bby-top p{
     width: 688px;
@@ -2570,7 +2648,7 @@ footer a{
   flex-wrap: wrap; 
   padding: 0 5px;
   flex-direction: column; 
-  width: 800px;
+  width: 768px;
 
 }
 
@@ -2582,7 +2660,7 @@ footer a{
  margin-bottom: 0;
  display: flex;
  gap: 10px;
- width: 790px;
+ width: 768px;
 }  
 
 
@@ -2637,12 +2715,15 @@ footer a{
  display: flex;
  flex-direction: column;
  cursor: pointer;
- width: 790px;
+ width: 768px;
  
 }
 .contenitore-flex div{
  padding-left: 0;
+}
 
+.contenitore-flex li{
+  max-width: 768px;
 }
 
 
@@ -2654,15 +2735,14 @@ footer a{
   text-transform: uppercase;
   font-size: 18px;
   border-top: 1px solid #ffffff;
-  width: 793px;
+  width: 768px;
   margin-bottom: 20px;
- 
-} 
+}
 
 .second-contenitore-centro {
 padding: 20px 20px 0;
 margin-bottom: 1.875rem;
-max-width: 800px;
+max-width: 768px;
 margin-left: 0;
 margin-right: 10px;
 border-top: 1px solid white;
@@ -2718,19 +2798,19 @@ border-top: 1px solid white;
  
 /* frecce footer */
 .secondo-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .terzo-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .quarto-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .quinto-contenitore{
-width: 790px;
+width: 768px;
 }
 
 .secondo-contenitore img{
@@ -2794,6 +2874,7 @@ display: block;
   font-size: 12px;
   line-height: 0;
   padding: 0;
+  margin: 0;
 }
 .second-contenitore-lista a:hover {
   text-decoration: underline;
@@ -2835,23 +2916,23 @@ display: block;
 }
 
 .secondo-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 1px solid rgb(214, 214, 214);
  border-top:1px solid rgb(214, 214, 214); 
 }
 
 .terzo-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 0.8px solid rgb(214, 214, 214);
  border-top:0.8px  solid rgb(214, 214, 214); 
 }
 .quarto-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 0.8px  solid rgb(214, 214, 214);
  border-top:0.8px  solid rgb(214, 214, 214); 
 }
 .quinto-contenitore-lista li{
- width: 790px;
+ width: 768px;
  border-bottom: 0.8px  solid rgb(214, 214, 214);
  border-top:0.8px  solid rgb(214, 214, 214); 
 }
@@ -3387,7 +3468,9 @@ text-align: center;
   padding: 1.25rem;
 }
 
-
+#dreamz-bg-tablet{
+  display: none;
+}
 .titoli h2{
   font-size: 1.5rem;
   display: flex;
