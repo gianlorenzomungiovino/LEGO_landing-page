@@ -2556,7 +2556,10 @@ footer a{
   .icons{
     width: 100%;
   }
-
+  .icons p{
+    font-weight: 550;
+    font-size: 10px ;
+  }
   .icons img{
     width: 74px;
     height: 59.81px;
@@ -2564,6 +2567,22 @@ footer a{
 
   .titolo-preferiti{
     margin-top: 35px;
+  }
+
+  .titolo-preferiti h2 {
+    font-weight: normal;
+  }
+  .testo-preferiti p{
+  font-size: 13px;
+  }
+
+  .compra-ora a{
+    font-size: 14px;
+    font-weight: 600;
+  }
+    
+  .wtb-section h2{
+      font-weight: normal;
   }
 
   /* set in evidenza tablet */
@@ -2576,6 +2595,9 @@ footer a{
     margin: 20px;
   }
 
+ .griglia-visualizza-articoli h2, a{
+    font-weight: bold;
+  }
 /* card carosello lego dreamz Tablet */
 
 .conteiner{
@@ -2583,7 +2605,7 @@ footer a{
 }
 .titoli h2{
   font-size: 1.5rem;
-    line-height: 2.3125rem;
+  line-height: 2.3125rem;
 }
 .titoli{
   justify-content: space-between;
@@ -2685,7 +2707,23 @@ footer a{
   .bby-top h2{
    font-size: 1.5rem;
   }
+
+  .h2-inevidenza{
+    font-weight: normal;
+  }
+
+  .viola-top h3, 
+  .arancione-right h3, 
+  .gialla-left h3,
+  .btn-in-evidenza a{
+    font-size: 13px;
+  }
   /*Leggi tutto*/
+  .spotlight h3, 
+  .h2-inevidenza{
+    font-size: 1.3rem;
+  }
+  
   .contenitore-griglia-visualizza-articoli {
     display: flex; 
     overflow-x: auto;
@@ -2698,7 +2736,9 @@ footer a{
     flex: 0 0 45%; 
     justify-content: normal;
   }
-  
+  .griglia-visualizza-articoli a{
+    font-weight: bold;
+  }
   .griglia-visualizza-articoli img {
     height: auto; 
   }
