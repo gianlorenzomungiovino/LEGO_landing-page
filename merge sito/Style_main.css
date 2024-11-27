@@ -2819,6 +2819,7 @@ display: block;
   font-size: 12px;
   line-height: 0;
   padding: 0;
+  margin: 0;
 }
 .second-contenitore-lista a:hover {
   text-decoration: underline;
