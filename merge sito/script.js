@@ -37,7 +37,6 @@ let lastScrollPosition = 0;
 const navbar = document.querySelector(".navbar-bottom");
 
 const triggerHeight = 1;
-// const triggerHeight = 126;
 
 window.addEventListener("scroll", () => {
   const currentScrollPosition = window.scrollY;
@@ -185,6 +184,8 @@ document.addEventListener("DOMContentLoaded", () => {
   openMenuButton.addEventListener("click", (event) => {
     overlay.style.display = "block";
 
+    menu.classList.add("active");
+
     if (window.scrollY !== 0) {
       scrollPosition =
         window.scrollY +
@@ -205,7 +206,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   closeMenuButton.addEventListener("click", () => {
     overlay.style.display = "none";
-    console.log(scrollPosition);
+
+    menu.classList.remove("active");
 
     // document.body.style.position = ""; // Rimuove il blocco
     document.body.style.top = "";
@@ -215,23 +217,10 @@ document.addEventListener("DOMContentLoaded", () => {
       window.scrollTo(0, scrollPosition);
     }
 
-    menu.style.display = "none";
+    // menu.style.display = "none";
 
     document.body.classList.remove("no-scroll");
   });
-
-  // closeMenuButton.addEventListener("click", () => {
-  //   overlay.style.display = "none";
-  //   console.log(scrollPosition);
-
-  //   document.body.style.position = ""; // Rimuove il blocco
-  //   document.body.style.top = "";
-
-  //   window.scrollTo(0, scrollPosition);
-
-  //   menu.style.display = "none";
-  //   document.body.classList.remove("no-scroll");
-  // });
 });
 
 // Leggi Tutto
@@ -255,12 +244,13 @@ toggleButton.addEventListener("click", (event) => {
 // footer
 function handleFooterDropdowns(event) {
   if (mediaQuery400.matches || mediaQuery800.matches) {
-    
     // Footer: Chi siamo tendina
     const secondoContenitore = document.querySelector(".secondo-contenitore");
-    const secondoContenitoreLista = document.querySelector(".secondo-contenitore-lista");
+    const secondoContenitoreLista = document.querySelector(
+      ".secondo-contenitore-lista"
+    );
 
-    secondoContenitore.addEventListener("click", () => {  
+    secondoContenitore.addEventListener("click", () => {
       if (secondoContenitoreLista.style.display === "block") {
         secondoContenitoreLista.style.display = "none";
       } else {
@@ -270,7 +260,9 @@ function handleFooterDropdowns(event) {
 
     // Footer: Supporto tendina
     const terzoContenitore = document.querySelector(".terzo-contenitore");
-    const terzoContenitoreLista = document.querySelector(".terzo-contenitore-lista");
+    const terzoContenitoreLista = document.querySelector(
+      ".terzo-contenitore-lista"
+    );
 
     terzoContenitore.addEventListener("click", () => {
       if (terzoContenitoreLista.style.display === "block") {
@@ -282,7 +274,9 @@ function handleFooterDropdowns(event) {
 
     // Footer: Attrazioni tendina
     const quartoContenitore = document.querySelector(".quarto-contenitore");
-    const quartoContenitoreLista = document.querySelector(".quarto-contenitore-lista");
+    const quartoContenitoreLista = document.querySelector(
+      ".quarto-contenitore-lista"
+    );
 
     quartoContenitore.addEventListener("click", () => {
       if (quartoContenitoreLista.style.display === "block") {
@@ -294,7 +288,9 @@ function handleFooterDropdowns(event) {
 
     // Footer: Altre informazioni tendina
     const quintoContenitore = document.querySelector(".quinto-contenitore");
-    const quintoContenitoreLista = document.querySelector(".quinto-contenitore-lista");
+    const quintoContenitoreLista = document.querySelector(
+      ".quinto-contenitore-lista"
+    );
 
     quintoContenitore.addEventListener("click", () => {
       if (quintoContenitoreLista.style.display === "block") {
@@ -303,11 +299,10 @@ function handleFooterDropdowns(event) {
         quintoContenitoreLista.style.display = "block";
       }
     });
-
-  } 
+  }
 }
 
 handleFooterDropdowns();
 
-mediaQuery400.addEventListener('change', handleFooterDropdowns);
-mediaQuery800.addEventListener('change', handleFooterDropdowns);
+mediaQuery400.addEventListener("change", handleFooterDropdowns);
+mediaQuery800.addEventListener("change", handleFooterDropdowns);

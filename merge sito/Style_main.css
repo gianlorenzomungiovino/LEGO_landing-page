@@ -2130,12 +2130,20 @@ footer a{
 
 
 .hm-menu-container{
-  display: none;
+  /* display: none; */
   position: fixed;
-  left: 0;
+  left: -100%;
   top: 0;
   z-index: 9999;
   background-color: white;
+  opacity: 0;
+  transition: left 0.5s ease, opacity 0.5s ease;
+}
+
+.hm-menu-container.active {
+  display: block;
+  left: 0; /* Porta il menu nella vista */
+  opacity: 1; /* Rende il menu visibile */
 }
 
 .hamburger-menu{
@@ -2292,7 +2300,7 @@ footer a{
   .hm-menu-container{
     width: 375px;
     height: 105vh;
-    display: none;
+    /* display: none; */
 }
 
   .hm-menu-top{
@@ -3126,7 +3134,7 @@ margin-right: -100px;
   }
 
   .hm-menu-container{
-    display: none;
+    /* display: none; */
     width: 390px;
 }
 
