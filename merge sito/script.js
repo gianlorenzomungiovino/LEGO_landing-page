@@ -253,61 +253,86 @@ toggleButton.addEventListener("click", (event) => {
 });
 
 // footer
-function handleFooterDropdowns(event) {
-  if (mediaQuery400.matches || mediaQuery800.matches) {
-    
-    // Footer: Chi siamo tendina
-    const secondoContenitore = document.querySelector(".secondo-contenitore");
-    const secondoContenitoreLista = document.querySelector(".secondo-contenitore-lista");
+// footer
+// chi siamo tendina
+const secondoContenitore = document.querySelector(".secondo-contenitore");
+const secondoContenitoreLista = document.querySelector(
+  ".secondo-contenitore-lista"
+);
 
-    secondoContenitore.addEventListener("click", () => {  
-      if (secondoContenitoreLista.style.display === "block") {
-        secondoContenitoreLista.style.display = "none";
-      } else {
-        secondoContenitoreLista.style.display = "block";
-      }
-    });
+secondoContenitore.addEventListener("click", () => {
+  if (secondoContenitoreLista.style.display === "block") {
+    secondoContenitoreLista.style.display = "none";
+  } else {
+    secondoContenitoreLista.style.display = "block";
+  }
+});
 
-    // Footer: Supporto tendina
-    const terzoContenitore = document.querySelector(".terzo-contenitore");
-    const terzoContenitoreLista = document.querySelector(".terzo-contenitore-lista");
+// end
+// supporto tendina
+const terzoContenitore = document.querySelector(".terzo-contenitore");
+const terzoContenitoreLista = document.querySelector(
+  ".terzo-contenitore-lista"
+);
 
-    terzoContenitore.addEventListener("click", () => {
-      if (terzoContenitoreLista.style.display === "block") {
-        terzoContenitoreLista.style.display = "none";
-      } else {
-        terzoContenitoreLista.style.display = "block";
-      }
-    });
+terzoContenitore.addEventListener("click", () => {
+  if (terzoContenitoreLista.style.display === "block") {
+    terzoContenitoreLista.style.display = "none";
+  } else {
+    terzoContenitoreLista.style.display = "block";
+  }
+});
+// end
 
-    // Footer: Attrazioni tendina
-    const quartoContenitore = document.querySelector(".quarto-contenitore");
-    const quartoContenitoreLista = document.querySelector(".quarto-contenitore-lista");
+// attrazioni tendina
+const quartoContenitore = document.querySelector(".quarto-contenitore");
+const quartoContenitoreLista = document.querySelector(
+  ".quarto-contenitore-lista"
+);
 
-    quartoContenitore.addEventListener("click", () => {
-      if (quartoContenitoreLista.style.display === "block") {
-        quartoContenitoreLista.style.display = "none";
-      } else {
-        quartoContenitoreLista.style.display = "block";
-      }
-    });
+quartoContenitore.addEventListener("click", () => {
+  if (quartoContenitoreLista.style.display === "block") {
+    quartoContenitoreLista.style.display = "none";
+  } else {
+    quartoContenitoreLista.style.display = "block";
+  }
+});
+// end
 
-    // Footer: Altre informazioni tendina
-    const quintoContenitore = document.querySelector(".quinto-contenitore");
-    const quintoContenitoreLista = document.querySelector(".quinto-contenitore-lista");
+// altre informazioni tendina
+const quintoContenitore = document.querySelector(".quinto-contenitore");
+const quintoContenitoreLista = document.querySelector(
+  ".quinto-contenitore-lista"
+);
 
-    quintoContenitore.addEventListener("click", () => {
-      if (quintoContenitoreLista.style.display === "block") {
-        quintoContenitoreLista.style.display = "none";
-      } else {
-        quintoContenitoreLista.style.display = "block";
-      }
-    });
+quintoContenitore.addEventListener("click", () => {
+  if (quintoContenitoreLista.style.display === "block") {
+    quintoContenitoreLista.style.display = "none";
+  } else {
+    quintoContenitoreLista.style.display = "block";
+  }
+});
 
-  } 
+
+const moveSxButton = document.querySelector("#sx");
+const moveDxButton = document.querySelector("#dx");
+const cardEvidenzaWrapper = document.querySelector(".container-articoli");
+function moveCarte(distance) {
+  cardEvidenzaWrapper.scrollBy({
+    left: distance,
+    behavior: "smooth",
+  });
 }
-
-handleFooterDropdowns();
-
-mediaQuery400.addEventListener('change', handleFooterDropdowns);
-mediaQuery800.addEventListener('change', handleFooterDropdowns);
+moveSxButton.addEventListener("click", function () {
+  moveCarte(-300);
+});
+moveDxButton.addEventListener("click", function () {
+  moveCarte(300);
+});
+cardEvidenzaWrapper.addEventListener("scroll", function () {
+  const scrollLeft = cardEvidenzaWrapper.scrollLeft;
+  const maxScrollLeft =
+    cardEvidenzaWrapper.scrollWidth - cardEvidenzaWrapper.clientWidth;
+  moveSxButton.style.opacity = scrollLeft > 0 ? 1 : 0.5;
+  moveDxButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
+});
