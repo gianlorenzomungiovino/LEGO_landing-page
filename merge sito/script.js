@@ -192,7 +192,6 @@ document.addEventListener("DOMContentLoaded", () => {
         window.scrollY +
         navbarHeight *
           parseFloat(getComputedStyle(document.documentElement).fontSize); // Converti in px;
-      // document.body.style.position = "fixed";
       document.body.style.top = `-${scrollPosition}px`; // Imposta il top per mantenere la posizione
       document.body.style.width = "100%";
     }
@@ -215,10 +214,13 @@ document.addEventListener("DOMContentLoaded", () => {
     if (window.scrollY === 0) {
       window.scrollTo(0, 0); // Se siamo al top della pagina torniamo al top
     } else {
-      window.scrollTo(0, scrollPosition);
+      window.scrollTo(
+        0,
+        scrollPosition -
+          navbarHeight *
+            parseFloat(getComputedStyle(document.documentElement).fontSize)
+      );
     }
-
-    // menu.style.display = "none";
 
     document.body.classList.remove("no-scroll");
   });
