@@ -253,7 +253,6 @@ toggleButton.addEventListener("click", (event) => {
 });
 
 // footer
-// footer
 // chi siamo tendina
 const secondoContenitore = document.querySelector(".secondo-contenitore");
 const secondoContenitoreLista = document.querySelector(
@@ -313,7 +312,6 @@ quintoContenitore.addEventListener("click", () => {
   }
 });
 
-
 const moveSxButton = document.querySelector("#sx");
 const moveDxButton = document.querySelector("#dx");
 const cardEvidenzaWrapper = document.querySelector(".container-articoli");
@@ -323,16 +321,20 @@ function moveCarte(distance) {
     behavior: "smooth",
   });
 }
+
 moveSxButton.addEventListener("click", function () {
   moveCarte(-300);
 });
+
 moveDxButton.addEventListener("click", function () {
   moveCarte(300);
 });
+
 cardEvidenzaWrapper.addEventListener("scroll", function () {
   const scrollLeft = cardEvidenzaWrapper.scrollLeft;
   const maxScrollLeft =
     cardEvidenzaWrapper.scrollWidth - cardEvidenzaWrapper.clientWidth;
+
   moveSxButton.style.opacity = scrollLeft > 0 ? 1 : 0.5;
   moveDxButton.style.opacity = scrollLeft < maxScrollLeft ? 1 : 0.5;
 });
