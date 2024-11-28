@@ -313,11 +313,11 @@ function moveCarte(distance) {
 }
 
 moveSxButton.addEventListener("click", function () {
-  moveCarte(-300);
+  moveCarte(-600);
 });
 
 moveDxButton.addEventListener("click", function () {
-  moveCarte(300);
+  moveCarte(600);
 });
 
 cardEvidenzaWrapper.addEventListener("scroll", function () {
