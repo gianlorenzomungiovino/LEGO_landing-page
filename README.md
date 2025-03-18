@@ -1,1 +1,3 @@
-# FS31-Team1-Project1
+# LEGO_landing-page
+
+A responsive refactoring of the LEGO website's landing page.
